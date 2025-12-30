@@ -347,10 +347,9 @@ header {
 
 .skills-container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    overflow-x: auto;
     padding-bottom: 1rem;
 }
 
@@ -955,6 +954,20 @@ footer {
 
     .form-row {
         flex-direction: column;
+    }
+
+    .skill-card {
+        width: calc(50% - 1rem);
+        min-width: 250px;
+    }
+
+    .contact {
+        clip-path: none;
+        padding-top: 4rem;
+    }
+
+    .contact .section-title {
+        padding-left: 0;
     }
 }
 
